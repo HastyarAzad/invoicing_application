@@ -1,0 +1,55 @@
+input[type=text], select, input[type=date],input[type=number], input[type=file] {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit],input[type=reset] {
+  width: 100%;
+  background-color: #ff5fb7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover,input[type=reset]:hover {
+  background-color: #f10085;
+}
+
+.element{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.form_div {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.update {
+  background-color: rgb(153, 223, 49) !important;
+  color:black !important;
+}
+.update:hover {
+  background-color: rgb(190, 255, 92) !important;
+  color:black !important;
+}
+
+
+.alert {
+  padding: 10px;
+  background-color: #c2f7c2;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  // position: absolute;
+}
+

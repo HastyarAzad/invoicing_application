@@ -1,0 +1,11 @@
+{
+  "dev": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "password",
+    "host": "localhost",
+    "database": "invoicing",
+    "port": 3306,
+    "multipleStatements": true
+  }, "sql-file": true
+}

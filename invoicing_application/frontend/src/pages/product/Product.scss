@@ -1,0 +1,53 @@
+.main_container {
+  display: flex;
+}
+
+.inputs{
+  // border: 1px solid red;
+  padding: 0px 20px;
+}
+.table {
+  // border: 1px solid red;
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.input{
+  // width: 100%;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.table::-webkit-scrollbar, .input::-webkit-scrollbar {
+  display: none;
+}
+
+.table, .input {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h3 {
+  padding-left: 20px;
+}
+
+.first_table,
+.second_table {
+  width: fit-content;
+}
+
+.first_table {
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.second_table {
+  min-width: fit-content;
+}

@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  frontend:
+    depends_on:
+      - server
+    build: ./frontend
+    environment:
+      - REACT_APP_API_DEFAULT_URL=server
+    ports:
+      - 3000:3000
+
+  server:
+    depends_on:
+      - mysql_server
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    environment:
+      - PORT=3001
+      - MYSQL_HOST=mysql_server
+      - MYSQL_USER=hastyar
+      - MYSQL_PASS=password
+      - MYSQL_DB=invoicing
+    command: ./docker-entrypoint.sh
+
+  mysql_server:
+    image: mysql:8.0
+    environment: 
+      - MYSQL_DATABASE=invoicing
+      - MYSQL_USER=hastyar
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
